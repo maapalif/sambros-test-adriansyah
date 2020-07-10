@@ -4,8 +4,9 @@
         <!-- LOGO -->
         <div class="headerbar-left">
             <a href="<?php echo base_url('index.php/company') ?>" class="logo">
+                <img alt="Logo" src="<?php echo base_url() ?>assets/images/avatars/admin.png" />
           <!-- logo for regular state and mobile devices -->
-                 <span class="logo-lg"><b>COMPANY</b></span>
+                 <span class="logo-lg"><b>PGA</b></span>
             </a>
         </div>
 

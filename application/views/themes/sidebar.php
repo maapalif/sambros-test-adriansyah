@@ -12,7 +12,7 @@
                     </li>
                                         
                    <li class="submenu">
-                        <a href="<?php echo base_url('index.php/company/pic') ?>"><i class="fa fa-fw fa-home"></i><span> PIC </span> </a>
+                        <a href="<?php echo base_url('index.php/company/pic') ?>"><i class="fa fa-fw fa-user"></i><span> PIC </span> </a>
                     </li>
                     
             </ul>

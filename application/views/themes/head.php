@@ -6,7 +6,6 @@
 		<meta name="author" content="Pike Web Development - https://www.pikephp.com">
 
 		<!-- Favicon -->
-		<link rel="shortcut icon" href="<?php echo base_url() ?>assets/images/favicon.ico">
 
 		<!-- Switchery css -->
 		<link href="<?php echo base_url() ?>assets/plugins/switchery/switchery.min.css" rel="stylesheet" />
