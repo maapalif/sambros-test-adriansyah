@@ -145,11 +145,11 @@ class Company extends CI_Controller {
 
 			$data = array(
 				
-				'name'		=> $i->post('a_companyNo'),
-				'address'	=> $i->post('a_Loc'),
-				'logo'		=> $i->post('a_Weight'),
-				'phone'		=> $i->post('a_Exp'),
-				'pic'		=> $i->post('a_Price'),
+				'name'		=> $i->post('name'),
+				'address'	=> $i->post('address'),
+				'logo'		=> $i->post('logo'),
+				'phone'		=> $i->post('phone'),
+				'pic'		=> $i->post('pic'),
 			);
 
 			$save = $this->company_model->save('p_company', $data);
@@ -222,9 +222,6 @@ class Company extends CI_Controller {
 					});		
 					";
 
-	   				$this->breadcrumb->add('Home', site_url('pga/'));
-					$this->breadcrumb->add('company', site_url('company/'));
-					$this->breadcrumb->add('Edit', site_url('company/edit/'));
 					$this->load->view('themes/template',$data);
 
 	   		}
