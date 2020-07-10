@@ -15,6 +15,7 @@
 					<th><center>Email</center></th>
 					<th><center>Phone</center></th>
 					<th><center>Adress</center></th>
+					<th><center>Company</center></th>
 					<th width="1%"><center>Act</center></th>
 			      </tr>
 			    </thead>
@@ -27,10 +28,11 @@
 				?>
 					<tr>
 						<td align= "center"><?= $i++; ?></td>
-						<td align= "center"><?= $h->name_PIC; ?></td>
-				        <td align= "center" nowrap><?= $h->email_PIC; ?></td>
-				        <td align= "center" nowrap><?= $h->phone_PIC;?></td>
-				        <td align= "center" nowrap><?= $h->address_PIC; ?></td>
+						<td align= "center"><?= $h->name; ?></td>
+				        <td align= "center" nowrap><?= $h->email; ?></td>
+				        <td align= "center" nowrap><?= $h->phone;?></td>
+				        <td align= "center" nowrap><?= $h->address; ?></td>
+				        <td align= "center" nowrap><?= $h->company; ?></td>
 				    </tr>
 				<?php } ?>
 			    </tbody>

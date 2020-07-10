@@ -20,7 +20,7 @@ class Company_model extends CI_Model
 
 	public function getPIC() {
 
-		$query = $this->db->query('SELECT * from PIC');
+		$query = $this->db->query('SELECT b.name_PIC as name, b.phone_PIC as phone,b.email_PIC as email, b.address_PIC as address,  a.name as company from company a LEFT JOIN PIC b ON a.id_PIC = b.id_PIC ');
 			return $query;
 	}
 
