@@ -2,7 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 
-class Apar extends MY_Controller {
+class Company extends CI_Controller {
 
 	public function __construct()
 	{
