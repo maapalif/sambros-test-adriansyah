@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 10 Jul 2020 pada 04.56
+-- Waktu pembuatan: 10 Jul 2020 pada 05.32
 -- Versi server: 10.4.13-MariaDB
 -- Versi PHP: 7.2.31
 
@@ -34,16 +34,17 @@ CREATE TABLE `company` (
   `address` text NOT NULL,
   `logo` varchar(50) NOT NULL,
   `id_PIC` int(11) NOT NULL,
-  `createdAt` timestamp NOT NULL DEFAULT current_timestamp()
+  `createdAt` timestamp NOT NULL DEFAULT current_timestamp(),
+  `discard` tinyint(1) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data untuk tabel `company`
 --
 
-INSERT INTO `company` (`id`, `name`, `phone`, `address`, `logo`, `id_PIC`, `createdAt`) VALUES
-(1, 'PT. A', '021345678', 'Tangerang', 'logo.jpg', 1, '2020-07-10 02:54:48'),
-(2, 'PT. B', '021678908', 'Tangerang Selatan', 'logob.jpg', 2, '2020-07-10 02:54:48');
+INSERT INTO `company` (`id`, `name`, `phone`, `address`, `logo`, `id_PIC`, `createdAt`, `discard`) VALUES
+(1, 'PT. A', '021345678', 'Tangerang', 'logo.jpg', 1, '2020-07-10 02:54:48', 0),
+(2, 'PT. B', '021678908', 'Tangerang Selatan', 'logob.jpg', 2, '2020-07-10 02:54:48', 0);
 
 -- --------------------------------------------------------
 
@@ -57,16 +58,17 @@ CREATE TABLE `pic` (
   `email_PIC` varchar(50) NOT NULL,
   `phone_PIC` varchar(14) NOT NULL,
   `address_PIC` text NOT NULL,
-  `createdAt` timestamp NOT NULL DEFAULT current_timestamp()
+  `createdAt` timestamp NOT NULL DEFAULT current_timestamp(),
+  `discard` tinyint(1) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data untuk tabel `pic`
 --
 
-INSERT INTO `pic` (`id_PIC`, `name_PIC`, `email_PIC`, `phone_PIC`, `address_PIC`, `createdAt`) VALUES
-(1, 'A', 'a@gmail.com', '08764378324', 'Tangerang', '2020-07-10 02:56:20'),
-(2, 'B', 'b@gmail.com', '086514256721', 'BSD', '2020-07-10 02:56:20');
+INSERT INTO `pic` (`id_PIC`, `name_PIC`, `email_PIC`, `phone_PIC`, `address_PIC`, `createdAt`, `discard`) VALUES
+(1, 'A', 'a@gmail.com', '08764378324', 'Tangerang', '2020-07-10 02:56:20', 0),
+(2, 'B', 'b@gmail.com', '086514256721', 'BSD', '2020-07-10 02:56:20', 0);
 
 --
 -- Indexes for dumped tables
