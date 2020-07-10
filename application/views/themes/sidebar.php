@@ -8,11 +8,11 @@
             <ul>
 
                     <li class="submenu">
-                        <a href="<?php echo base_url('index.php/pga') ?>"><i class="fa fa-fw fa-home"></i><span> Home </span> </a>
+                        <a href="<?php echo base_url('index.php/company') ?>"><i class="fa fa-fw fa-home"></i><span> Home </span> </a>
                     </li>
                                         
                    <li class="submenu">
-                        <a href="<?php echo base_url('index.php/pga') ?>"><i class="fa fa-fw fa-home"></i><span> PIC </span> </a>
+                        <a href="<?php echo base_url('index.php/company/pic') ?>"><i class="fa fa-fw fa-home"></i><span> PIC </span> </a>
                     </li>
                     
             </ul>

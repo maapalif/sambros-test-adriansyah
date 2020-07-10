@@ -32,7 +32,7 @@
 						<td align= "center" nowrap><?= $h->phone;?></td>
 				        <td align= "center" nowrap><?= $h->address; ?></td>
 				        <td align= "center" nowrap><?= $h->logo; ?></td>
-				        <td align= "center" nowrap><?= $h->pic;?></td>
+				        <td align= "center" nowrap><?= $h->PIC;?></td>
 				    </tr>
 				<?php } ?>
 			    </tbody>

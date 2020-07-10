@@ -13,7 +13,6 @@ class Company extends CI_Controller {
 
 	public function index()
 	{
-		$this->require_min_level(1);
 
 		$data = array(
 			'title'			=>	'Company',
@@ -49,8 +48,6 @@ class Company extends CI_Controller {
 			});	
 		";
 		
-		$this->breadcrumb->add('Home', site_url('pga/'));
-		$this->breadcrumb->add('APAR', site_url('apar/'));
 		$this->load->view('themes/template', $data);
 
   		
@@ -58,8 +55,7 @@ class Company extends CI_Controller {
 
 	public function PIC()
 	{
-		$this->require_min_level(1);
-
+		
 		$data = array(
 			'title'			=>	'PIC',
 			'data'			=>	$this->Company_model->getPIC()->result(),
@@ -94,8 +90,6 @@ class Company extends CI_Controller {
 			});	
 		";
 		
-		$this->breadcrumb->add('Home', site_url('company/'));
-		$this->breadcrumb->add('PIC', site_url('company/pic'));
 		$this->load->view('themes/template', $data);
 
   		
